@@ -21,7 +21,7 @@ flags.DEFINE_float("alpha", 2.0, "The margin size for the triplet loss")
 flags.DEFINE_float("learning_rate", 0.001, "The initial learning rate.")
 flags.DEFINE_float("dropout_prob", 0.5, "The dropout keep probability")
 
-flags.DEFINE_boolean("gpu", True, "Enable to use GPU for training, instead of CPU")
+flags.DEFINE_boolean("gpu", False, "Enable to use GPU for training, instead of CPU")
 flags.DEFINE_integer("gpu_devidx", 0, "The device index of the target GPU (in case that multiple GPUs are available)")
 
 def main():
