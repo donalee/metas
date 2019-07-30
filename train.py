@@ -41,7 +41,7 @@ def train(network_architecture, user_type_pairs, user_adj_dict, item_adj_dict,
 		# Optimize the model using the mini-batch of triplets
 		actionNN.optimize_network(batch_anchor, batch_pos, batch_neg, dropout_prob)
 
-        # Evaluate the model using the valid dataset
+		# Evaluate the model using the valid dataset
 		if it % display_step == 0:
 			print("# Triplets: %d" % actionNN.triplet_cnt)
 			hits, ndcgs = [[] for i in range(n_types)], [[] for i in range(n_types)]
