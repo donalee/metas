@@ -4,10 +4,10 @@ This is a Tensorflow implementation for predicting users' future behaviors. The 
 
 ## Overview
 
-Users’ behaviors observed in many web-based applications are usually heterogeneous, so modeling their behaviors considering the interplay among multiple types of actions is important. However, recent collaborative filtering (CF) methods based on a metric learning approach cannot learn multiple types of user actions, because they are developed for only a single type of user actions. This paper proposes a novel metric learning method, called METAS, to jointly model heterogeneous user behaviors. Specifically, it learns two distinct spaces: 1) **action space** which captures the relations among all observed and unobserved actions, and 2) **entity space** which captures high-level similarities among users and among items. Each action vector in the action space is computed using a non-linear function and its corresponding entity vectors in the entity space. In addition, METAS adopts an efficient triplet mining algorithm to effectively speed up the convergence of metric learning. Experimental results show that METAS outperforms the state-of-the-art methods in predicting users’ heterogeneous actions, and its entity space represents the user-user and item-item similarities more clearly than the space trained by the other methods.
+Users’ behaviors observed in many web-based applications are usually heterogeneous, so modeling their behaviors considering the interplay among multiple types of actions is important. However, recent collaborative filtering (CF) methods based on a metric learning approach cannot learn multiple types of user actions, because they are developed for only a single type of user actions. This paper proposes a novel metric learning method, called METAS, to jointly model heterogeneous user behaviors. Specifically, it learns two distinct spaces: **1) action space** which captures the relations among all observed and unobserved actions, and **2) entity space** which captures high-level similarities among users and among items. Each action vector in the action space is computed using a non-linear function and its corresponding entity vectors in the entity space. In addition, METAS adopts an efficient triplet mining algorithm to effectively speed up the convergence of metric learning. Experimental results show that METAS outperforms the state-of-the-art methods in predicting users’ heterogeneous actions, and its entity space represents the user-user and item-item similarities more clearly than the space trained by the other methods.
 
 <p align="center">
-<img src="./figures/dualspace.png" width="550">
+<img src="./figures/actionspace.png" width="500">
 </p>
 
 ## Experimental Results
@@ -21,7 +21,7 @@ Users’ behaviors observed in many web-based applications are usually heterogen
 We share the download links of the pre-processed datasets used for the experiments. The original T-mall dataset is provided by the paper ["SPTF: A Scalable Probabilistic Tensor Factorization Model for Semantic-Aware Behavior Prediction"](https://ieeexplore.ieee.org/document/8215531), and the original Taobao dataset is publicly available from [Ali Mobile Recommendation Algorithm Competition](https://tianchi.aliyun.com/dataset/dataDetail?dataId=46). Please untar and place them in `./data/`.
 
 * [T-mall](https://www.dropbox.com/s/u39ayc8gzkkg6rk/tmall.tar.gz)
-* [Taobao](https://www.dropbox.com/s/u39ayc8gzkkg6rk/taobao.tar.gz)
+* [Taobao](https://www.dropbox.com/s/gsw4py02mcrqogt/taobao.tar.gz)
 
 ### Running
 
