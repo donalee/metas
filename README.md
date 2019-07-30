@@ -20,8 +20,8 @@ Users’ behaviors observed in many web-based applications are usually heterogen
 ### Downloading user behavior datasets
 We share the download links of the pre-processed datasets used for the experiments. The original T-mall dataset is provided by the paper ["SPTF: A Scalable Probabilistic Tensor Factorization Model for Semantic-Aware Behavior Prediction"](https://ieeexplore.ieee.org/document/8215531), and the original Taobao dataset is publicly available from [Ali Mobile Recommendation Algorithm Competition](https://tianchi.aliyun.com/dataset/dataDetail?dataId=46). Please untar and place them in `./data/`.
 
-* [T-mall](https://www.dropbox.com/s/u39ayc8gzkkg6rk/tmall.tar.gz)
-* [Taobao](https://www.dropbox.com/s/gsw4py02mcrqogt/taobao.tar.gz)
+* [T-mall](https://www.dropbox.com/s/ez8gyd2tfn3y0qr/tmall.tar.gz)
+* [Taobao](https://www.dropbox.com/s/wca023w8m4extxs/taobao.tar.gz)
 
 ### Running
 
