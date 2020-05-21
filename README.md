@@ -1,6 +1,6 @@
 # Collaborative Metric Learning for User Behavior Prediction
 
-This is a Tensorflow implementation for predicting users' future behaviors. The method is described in the paper ["Action Space Learning for Heterogeneous User Behavior Prediction"](), presented at IJCAI 2019.
+This is a Tensorflow implementation for predicting users' future behaviors. The method is described in the paper ["Action Space Learning for Heterogeneous User Behavior Prediction"](https://www.ijcai.org/Proceedings/2019/392), presented at IJCAI 2019.
 
 ## Overview
 
@@ -45,3 +45,16 @@ Argument | Default | Description
 `--gpu <bool>` | False | Enable to use GPU for training, instead of CPU
 `--gpu_devidx <int>` | 0 | The device index of the target GPU (in case that multiple GPUs are available)
 
+## Citation
+If you use this code for your publication, please cite the original paper:
+```
+@inproceedings{lee2019action,
+  title     = {Action Space Learning for Heterogeneous User Behavior Prediction},
+  author    = {Lee, Dongha and Park, Chanyoung and Ju, Hyunjun and Hwang, Junyoung and Yu, Hwanjo},
+  booktitle = {Proceedings of the Twenty-Eighth International Joint Conference on
+               Artificial Intelligence, {IJCAI-19}},
+  publisher = {International Joint Conferences on Artificial Intelligence Organization},             
+  pages     = {2830--2836},
+  year      = {2019}
+}
+```
